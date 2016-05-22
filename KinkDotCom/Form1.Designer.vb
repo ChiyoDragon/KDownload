@@ -22,20 +22,20 @@ Partial Class Form1
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.LoginButton = New System.Windows.Forms.Button()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'LoginButton
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 13)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.LoginButton.Location = New System.Drawing.Point(13, 13)
+        Me.LoginButton.Name = "LoginButton"
+        Me.LoginButton.Size = New System.Drawing.Size(75, 23)
+        Me.LoginButton.TabIndex = 0
+        Me.LoginButton.Text = "LoginButton"
+        Me.LoginButton.UseVisualStyleBackColor = True
         '
         'WebBrowser1
         '
@@ -72,7 +72,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.LoginButton)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -80,7 +80,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents LoginButton As Button
     Friend WithEvents WebBrowser1 As WebBrowser
     Friend WithEvents Button2 As Button
     Friend WithEvents Label1 As Label

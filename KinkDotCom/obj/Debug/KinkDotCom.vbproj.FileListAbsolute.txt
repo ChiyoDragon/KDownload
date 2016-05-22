@@ -14,3 +14,10 @@ G:\git\KinkDotCom\bin\Debug\KinkDotCom.exe.config
 G:\git\KinkDotCom\obj\Debug\KinkDotCom.exe
 G:\git\KinkDotCom\obj\Debug\KinkDotCom.xml
 G:\git\KinkDotCom\obj\Debug\KinkDotCom.pdb
+G:\git\KinkDotCom\bin\Debug\KinkDotCom.exe
+G:\git\KinkDotCom\bin\Debug\KinkDotCom.pdb
+G:\git\KinkDotCom\bin\Debug\KinkDotCom.xml
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.vbprojResolveAssemblyReference.cache
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.Form1.resources
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.Resources.resources
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.vbproj.GenerateResource.Cache

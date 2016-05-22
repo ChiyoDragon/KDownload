@@ -2,6 +2,8 @@
 Option Strict Off
 Imports System.IO
 
+'Liste der Channels liegt mit im Projekt
+
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Cookies beim Laden des Programmes löschen
@@ -25,9 +27,13 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object,
+    Private Sub Login(ByVal sender As System.Object,
                               ByVal e As System.EventArgs) _
-                              Handles Button1.Click
+                              Handles LoginButton.Click
+        If WebBrowser1.DocumentText.Contains("chiyodragon") Then
+            MsgBox("Bereits Eingeloggt!")
+            Return
+        End If
 
         WebBrowser1.Document.GetElementById("usernameLogin").InnerText = "ChiyoDragon"
         WebBrowser1.Document.GetElementById("passwordLogin").InnerText = "snakeeater"
