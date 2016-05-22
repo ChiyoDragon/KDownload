@@ -48,7 +48,7 @@ Public Class Form1
             Label1.Text = "Eingeloggt"
         End If
     End Sub
-
+    'foo for Testcommit Benji
     Public Sub Sleep(ByVal msec As Integer)
         Dim myTimer As Date
         myTimer = Now.AddMilliseconds(msec)

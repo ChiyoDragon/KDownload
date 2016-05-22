@@ -10,3 +10,7 @@ C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\D
 C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.exe
 C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.xml
 C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.pdb
+G:\git\KinkDotCom\bin\Debug\KinkDotCom.exe.config
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.exe
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.xml
+G:\git\KinkDotCom\obj\Debug\KinkDotCom.pdb
