@@ -24,6 +24,8 @@ Public Class Form1
         ' System.Threading(4000)
         If WebBrowser1.DocumentText.Contains("chiyodragon") Then
             MsgBox("Eingeloggt")
+        Else
+
         End If
     End Sub
 
@@ -70,4 +72,15 @@ Public Class Form1
             Label1.Text = "Eingeloggt"
         End If
     End Sub
+<<<<<<< 25792a63333d70bc8ad95ad2d4fc604190d848cf
 End Class
+=======
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        For Each elem As HtmlElement In WebBrowser1.Document.GetElementsByTagName("form")
+            Dim test As Integer
+            MsgBox("" & test)
+        Next
+    End Sub
+End Class
+>>>>>>> test

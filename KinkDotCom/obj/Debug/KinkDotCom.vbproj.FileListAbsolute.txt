@@ -1,3 +1,4 @@
+<<<<<<< 25792a63333d70bc8ad95ad2d4fc604190d848cf
 C:\Users\Chiyo\AppData\Local\Temporary Projects\KinkDotCom\bin\Debug\KinkDotCom.exe.config
 C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\bin\Debug\KinkDotCom.exe.config
 C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\bin\Debug\KinkDotCom.exe
@@ -21,3 +22,28 @@ G:\git\KinkDotCom\obj\Debug\KinkDotCom.vbprojResolveAssemblyReference.cache
 G:\git\KinkDotCom\obj\Debug\KinkDotCom.Form1.resources
 G:\git\KinkDotCom\obj\Debug\KinkDotCom.Resources.resources
 G:\git\KinkDotCom\obj\Debug\KinkDotCom.vbproj.GenerateResource.Cache
+=======
+C:\Users\Chiyo\AppData\Local\Temporary Projects\KinkDotCom\bin\Debug\KinkDotCom.exe.config
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\bin\Debug\KinkDotCom.exe.config
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\bin\Debug\KinkDotCom.exe
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\bin\Debug\KinkDotCom.pdb
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\bin\Debug\KinkDotCom.xml
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.vbprojResolveAssemblyReference.cache
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.Form1.resources
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.Resources.resources
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.vbproj.GenerateResource.Cache
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.exe
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.xml
+C:\Users\Chiyo\Documents\Visual Studio 2015\Projects\KinkDotCom\KinkDotCom\obj\Debug\KinkDotCom.pdb
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\bin\Debug\KinkDotCom.exe.config
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.exe
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.xml
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.pdb
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\bin\Debug\KinkDotCom.exe
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\bin\Debug\KinkDotCom.pdb
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\bin\Debug\KinkDotCom.xml
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.vbprojResolveAssemblyReference.cache
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.Form1.resources
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.Resources.resources
+C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\KinkDotCom.vbproj.GenerateResource.Cache
+>>>>>>> test
