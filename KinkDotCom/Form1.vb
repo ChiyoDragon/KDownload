@@ -30,6 +30,7 @@ Public Class Form1
     Private Sub Login(ByVal sender As System.Object,
                               ByVal e As System.EventArgs) _
                               Handles LoginButton.Click
+
         If WebBrowser1.DocumentText.Contains("chiyodragon") Then
             MsgBox("Bereits Eingeloggt!")
             Return
