@@ -24,9 +24,10 @@ Public Class Form1
         ' System.Threading(4000)
         If WebBrowser1.DocumentText.Contains("chiyodragon") Then
             MsgBox("Eingeloggt")
-        Else
-
         End If
+        'Auswahlmenü wegclicken
+        WebBrowser1.Document.GetElementById("closeViewingPreferences").Focus()
+        WebBrowser1.Document.GetElementById("closeViewingPreferences").InvokeMember("click")
     End Sub
 
     Private Sub Login(ByVal sender As System.Object,
@@ -52,19 +53,22 @@ Public Class Form1
             Application.DoEvents()
         Loop
         Sleep(5000)
-        If WebBrowser1.DocumentText.Contains("chiyodragon") Then
-            Label1.ForeColor() = Color.Green
-            Label1.Text = "Eingeloggt"
-        End If
+        Try
+            If WebBrowser1.DocumentText.Contains("chiyodragon") Then
+                Label1.ForeColor() = Color.Green
+                Label1.Text = "Eingeloggt"
+            End If
+        Catch
+        End Try
     End Sub
-    'test
-    Public Sub Sleep(ByVal msec As Integer)
+    Public Function Sleep(ByVal msec As Integer)
         Dim myTimer As Date
         myTimer = Now.AddMilliseconds(msec)
         Do While myTimer > Now
             Application.DoEvents()
         Loop
-    End Sub
+        Return 0
+    End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If WebBrowser1.DocumentText.Contains("chiyodragon") Then
@@ -72,5 +76,6 @@ Public Class Form1
             Label1.Text = "Eingeloggt"
         End If
     End Sub
+
 End Class
 
