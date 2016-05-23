@@ -15,7 +15,7 @@ Public Class Form1
             Catch ex As Exception
             End Try
         Next
-        'Kink.com Login aufrufen
+        'Kink.com Login aufrufen 
         WebBrowser1.Navigate("http://www.kink.com/login")
         ' Warten bis Webseite geladen
         Do Until WebBrowser1.ReadyState = WebBrowserReadyState.Complete
