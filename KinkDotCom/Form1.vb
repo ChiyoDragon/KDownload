@@ -21,10 +21,6 @@ Public Class Form1
         Do Until WebBrowser1.ReadyState = WebBrowserReadyState.Complete
             Application.DoEvents()
         Loop
-        ' System.Threading(4000)
-        If WebBrowser1.DocumentText.Contains("chiyodragon") Then
-            MsgBox("Eingeloggt")
-        End If
         'Auswahlmenü wegclicken
         WebBrowser1.Document.GetElementById("closeViewingPreferences").Focus()
         WebBrowser1.Document.GetElementById("closeViewingPreferences").InvokeMember("click")
@@ -41,7 +37,6 @@ Public Class Form1
 
         WebBrowser1.Document.GetElementById("usernameLogin").InnerText = "ChiyoDragon"
         WebBrowser1.Document.GetElementById("passwordLogin").InnerText = "snakeeater"
-
         WebBrowser1.Document.GetElementById("loginSubmit").Focus()
         WebBrowser1.Document.GetElementById("loginSubmit").InvokeMember("click")
         Do While WebBrowser1.ReadyState = False     ' Warten bis Webseite vollständig geladen
@@ -77,5 +72,44 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim pagenumber As Integer
+        pagenumber = 1
+
+        WebBrowser1.Navigate("http://www.kink.com/channel/boundinpublic/latest")
+        Sleep(5000)
+
+        Do
+            WebBrowser1.Navigate("http://www.kink.com/channel/boundinpublic/latest/" & pagenumber)
+            Sleep(5000)
+        Loop Until pagenumber = 0
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        WebBrowser1.Navigate("http://www.kink.com/channel/boundinpublic/latest/page/1")
+        Sleep(5000)
+        'If WebBrowser1.Document.GetElementById("shootID").ToString = "test" Then
+
+        'End If
+        Dim input As String = WebBrowser1.DocumentText.ToString
+        Dim shootIndex(300) As String
+        Dim i As Integer
+        i = -1
+        If My.Computer.FileSystem.FileExists("C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\test.txt") Then
+            My.Computer.FileSystem.DeleteFile("C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\test.txt")
+        End If
+
+        My.Computer.FileSystem.WriteAllText("C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\test.txt", "" & input, True)
+        For Each line As String In IO.File.ReadAllLines("C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\test.txt")
+            If line.Contains("data-shootId") And line.Contains("class= & chr(34) & shoot & chr(34)") Then
+                i = i + 1
+                shootIndex(i) = line
+                TextBox1.Text = line & vbCrLf & TextBox1.Text
+            End If
+        Next
+        ReDim shootIndex(i)
+        MsgBox("" & shootIndex.Length)
+    End Sub
 End Class
 
