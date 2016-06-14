@@ -6,9 +6,11 @@ Imports System.IO
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Cookies beim Laden des Programmes löschen
+        'CoockieHandler()
+        'GetDirectory()
+
         Dim Dinfo As DirectoryInfo = New DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.Cookies))
-        Dim Finfo As FileInfo
+        Dim Finfo As FileInfo 'Sowohl die Coockie-löschung und getDirectory sind ausgelagert, schmeißen aber.
         For Each Finfo In Dinfo.GetFiles
             Try
                 Finfo.Delete()
@@ -86,6 +88,22 @@ Public Class Form1
 
     End Sub
 
+    Private Function GetDirectory() 'InvalidCastException, Angeblich irgendwo INT
+        Dim Dinfo As String = Environment.GetFolderPath(Environment.CurrentDirectory)
+        Return Dinfo
+    End Function
+
+    Private Sub CoockieHandler()
+        'Cookies beim Laden des Programmes löschen
+        Dim Dinfo As DirectoryInfo = New DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.Cookies))
+        Dim Finfo As FileInfo
+        For Each Finfo In Dinfo.GetFiles
+            Try
+                Finfo.Delete()
+            Catch ex As Exception
+            End Try
+        Next
+    End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         WebBrowser1.Navigate("http://www.kink.com/channel/boundinpublic/latest/page/1")
         Sleep(5000)
@@ -96,6 +114,7 @@ Public Class Form1
         Dim shootIndex(300) As String
         Dim i As Integer
         i = -1
+        'Dim pfad As String = GetDirectory()
         If My.Computer.FileSystem.FileExists("C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\test.txt") Then
             My.Computer.FileSystem.DeleteFile("C:\Users\Chiyo\Source\Repos\KDownload\KinkDotCom\obj\Debug\test.txt")
         End If
